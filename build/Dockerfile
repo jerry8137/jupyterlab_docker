@@ -1,4 +1,4 @@
-FROM ufoym/deepo:pytorch-cu102
+FROM ufoym/deepo:pytorch-cu113
 RUN apt-get update && curl -sL https://deb.nodesource.com/setup_12.x | bash - && apt-get install -y nodejs
 RUN apt-get update && apt-get install -y openssh-server curl
 RUN mkdir -p /root/.ssh
