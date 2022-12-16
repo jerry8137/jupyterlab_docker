@@ -18,4 +18,4 @@ ADD run.sh /run.sh
 RUN chmod 755 run.sh
 #CMD jupyter lab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=${NOTEBOOK_APP_TOKEN} --notebook-dir=${NOTEBOOK_DIR}
 CMD ["/run.sh"]
-RUN echo 'export CUDA_VISIBLE_DEVICES="1"' >> ~/.bashrc
+#RUN echo 'export CUDA_VISIBLE_DEVICES="1"' >> ~/.bashrc
