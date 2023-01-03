@@ -5,7 +5,7 @@ RUN mkdir -p /root/.ssh
 RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/^#PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN echo "root:root" | chpasswd
-RUN python -m pip install jupyterlab ipympl pytorch_lightning opencv-python-headless ipdb wandb
+RUN python -m pip install jupyterlab ipympl pytorch_lightning opencv-python-headless ipdb wandb av2 pytorch_gan_metrics pyyaml
 
 # # git extension
 # RUN jupyter labextension install  @jupyterlab/git @jupyterlab/debugger && pip install jupyterlab-git && jupyter serverextension enable --py jupyterlab_git
